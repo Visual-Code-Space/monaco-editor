@@ -1,6 +1,6 @@
 @font-face {
   font-family: "codicon";
-  src: url(file:///android_asset/code-oss/editor/monaco-editor/min/vs/base/browser/ui/codicons/codicon/codicon.ttf);
+  src: url(https://appassets.androidplatform.net/monaco/monaco-editor/min/vs/base/browser/ui/codicons/codicon/codicon.ttf);
 }
 
 html,

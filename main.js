@@ -3,7 +3,7 @@ let currentValue = "";
 
 require.config({
     paths: {
-        vs: "https://appassets.androidplatform.net/assets/code-oss/editor/monaco-editor/min/vs",
+        vs: "https://appassets.androidplatform.net/monaco/monaco-editor/min/vs",
     },
 });
 
@@ -13,9 +13,9 @@ window.MonacoEnvironment = {
 
 let proxy = URL.createObjectURL(new Blob([`
     self.MonacoEnvironment = {
-        baseUrl: 'https://appassets.androidplatform.net/assets/code-oss/editor/monaco-editor/min/'
+        baseUrl: 'https://appassets.androidplatform.net/monaco/monaco-editor/min/'
     };
-    importScripts('https://appassets.androidplatform.net/assets/code-oss/editor/monaco-editor/min/vs/base/worker/workerMain.js');
+    importScripts('https://appassets.androidplatform.net/monaco/monaco-editor/min/vs/base/worker/workerMain.js');
 `], { type: 'text/javascript' }));
 
 // Create the editor
